@@ -9,12 +9,57 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    var gameMode = -1
+    
+    
+    
+    
+    @IBOutlet weak var Red: UIButton!
+    
+    @IBOutlet weak var Blue: UIButton!
+    
+    @IBOutlet weak var Yellow: UIButton!
+    
+    @IBOutlet weak var Green: UIButton!
+    
+    @IBOutlet weak var modeSelect: UILabel!
+    
+    
+    @IBOutlet weak var appName: UILabel!
+    
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        
     }
 
+    
+    @IBAction func redPress(_ sender: UIButton) {
+        if (gameMode == -1){
+            gameMode = 1
+        }
+    }
+    
+    @IBAction func bluePress(_ sender: UIButton) {
+        if (gameMode == -1){
+            gameMode = 2
+        }
+    }
+    @IBAction func yellowPress(_ sender: UIButton) {
+        if (gameMode == -1){
+            gameMode = 3
+        }
+    }
+    @IBAction func greenPress(_ sender: UIButton) {
+        if (gameMode == -1){
+            gameMode = 4
+        }
+    }
+    
+    
 
 }
 
